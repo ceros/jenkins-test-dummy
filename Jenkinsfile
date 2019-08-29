@@ -11,7 +11,7 @@ pipeline {
       steps {
         script {
         
-          tools.scmMerge("https://github.com/${repository}", ${branch}, 'cer-1065')
+          tools.scmMerge("https://github.com/${repository}", ${branch}, 'feature/cer-1065')
 
         }
       }
@@ -25,7 +25,7 @@ pipeline {
       steps {
         script {
           def creds = tools.getCredentials(CerosVars.GITHUB_CREDENTIALS_ID);
-          sh "git push https://${creds}@github.com/${repository} HEAD:cer-1065"    
+          sh "git push https://${creds}@github.com/${repository} HEAD:feature/cer-1065"    
             
         }
       }
