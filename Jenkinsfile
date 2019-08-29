@@ -4,7 +4,10 @@ tools.createTrigger('abc123', 'github.com/ceros/jenkins-test-dummy', ['release/*
 tools.initPipeline()
 
 pipeline {
-  label 'jenkins-ecs-slave'
+  agent
+  {
+    label 'jenkins-ecs-slave'
+  }
 
   stages {
     stage ('Merge release into develop') {
