@@ -25,7 +25,7 @@ pipeline {
       steps {
         script {
           def creds = tools.getCredentials(CerosVars.GITHUB_CREDENTIALS_ID);
-          sh "git push https://${creds}@github.com/${repository} HEAD:develop"    
+          sh "git push https://${creds}@github.com/${repository} HEAD:cer-1065"    
             
         }
       }
