@@ -11,7 +11,7 @@ pipeline {
       steps {
         script {
         
-          tools.scmMerge("https://github.com/${repository}", ${branch}, 'develop')
+          tools.scmMerge("https://github.com/${repository}", ${branch}, 'cer-1065')
 
         }
       }
