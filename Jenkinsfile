@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-tools.createTrigger('abc123', 'github.com/ceros/enkins-test-dummy', ['release/*'])
+tools.createTrigger('abc123', 'github.com/ceros/jenkins-test-dummy', ['release/*'])
 tools.initPipeline()
 
 pipeline {
